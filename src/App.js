@@ -6,6 +6,7 @@ import Signup from './component/signup';
 import Signfind from './component/signfind';
 import Unsignup from './component/unsignup';
 import Main from './component/main';
+import Profile from './component/profile';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function AnimatedRoutes() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/signfind" element={<Signfind />} />
           <Route path="/unsignup" element={<Unsignup />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
