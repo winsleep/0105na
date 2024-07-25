@@ -17,7 +17,7 @@ export default function Unsignup() {
         if (nickname.length < 2 || nickname.length > 30) {
             setError(true); // 입력 조건에 맞지 않으면 오류 상태를 설정합니다.
         } else {
-            navigate('/profile');
+            navigate('/profile', { state: { nickname } });
         }
     };
 
