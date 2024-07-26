@@ -1,7 +1,8 @@
 import React from 'react';
 import '../index.css';
 import { useLocation } from 'react-router-dom';
-import ilonaImage from '../image/ilona.png'; 
+import { useNavigate } from 'react-router-dom';
+import ilonaImage from '../image/ilona.png';
 import alone from '../image/alone.png';
 import enter from '../image/enter.png';
 import chat from '../image/chat.png';
@@ -15,6 +16,36 @@ import levelbar from '../image/levelbar.PNG';
 export default function Profile() {
     const location = useLocation();
     const nickname = location.state?.nickname || '닉네임 없음';
+    const navigate = useNavigate();
+
+    const handleSetting = () => {
+        navigate('/setting');
+    };
+    const handleGemstore = () => {
+        navigate('/gemstore');
+    };
+   /*  const handleProfile = () => {
+        navigate('/profile'); 현재 프로필 파일 이름 바꾼 이후에 다시*/
+    };
+    const handleAlarm = () => {
+        navigate('/alarm');
+    };
+    const handleChatting = () => {
+        navigate('/chatting');
+    };
+    const handleSoleplay = () => {
+        navigate('/soloplay')
+
+    };
+    const handleMulti = () => {
+        navigate('/multi')
+
+    };
+    const handleDeco = () => {
+        navigate('/deco')
+
+    };
+
     return (
         <div className="profile-page">
             <div className="top-section">

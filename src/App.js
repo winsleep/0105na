@@ -7,6 +7,8 @@ import Signfind from './component/signfind';
 import Unsignup from './component/unsignup';
 import Main from './component/main';
 import Profile from './component/profile';
+import Alarm from './component/alarm';
+import Soloplay from './component/soloplay';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -21,6 +23,14 @@ function AnimatedRoutes() {
           <Route path="/signfind" element={<Signfind />} />
           <Route path="/unsignup" element={<Unsignup />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/setting" element={<Setting />} />
+          <Route path="/alarm" element={<Alarm />} />
+          <Route path="/chatting" element={<Chatting />} />
+          <Route path="/gemstore" element={<Gemstore />} />
+          <Route path="/soloplay" element={<Soloplay />} />
+          <Route path="/multi" element={<Multi />} />
+          <Route path="/deco" element={<Deco />} />
+
         </Routes>
       </CSSTransition>
     </TransitionGroup>
